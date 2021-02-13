@@ -1,11 +1,10 @@
-
-    const menu = document.getElementById('menu');
-        menulink = document.getElementById('toggle-menu');
-
-        menulink.addEventListener('click', function(e) {
-            menu.classList.toggle('active');
-            e.preventDefault();
-        });
-
-
-
+var toggleStatus = 0;
+function toggleMenu () {
+    if (toggleStatus == 1) {
+        document.getElementById("menu").style.left = "-240px";
+        toggleStatus = 0;    
+    }   else if (toggleStatus == 0) {
+        document.getElementById("menu").style.left = "0px";
+        toggleStatus = 1; 
+    }
+}

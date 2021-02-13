@@ -1,7 +1,25 @@
 body {
   min-height: 100vh;
   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#2b2d42+0,000000+100 */
-  background: linear-gradient(to bottom, #2b2d42 0%, #000000 100%);
+  background: #29282a;
+}
+
+.hero {
+  height: 100vh;
+  padding-top: 300px;
+  box-sizing: border-box;
+}
+
+.hero .triangle {
+  height: 100vh;
+  width: 100vh;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-left: 0;
+  z-index: -100;
 }
 
 h1 {
@@ -10,7 +28,32 @@ h1 {
   font-size: 50px;
   font-style: bold;
   margin-left: 20%;
-  margin-top: 300px;
+  letter-spacing: 2px;
+}
+
+.title {
+  text-align: center;
+  margin: 200px auto;
+}
+
+.title a {
+  display: inline-block;
+  color: white;
+  font-family: Lato;
+  font-size: 40px;
+  font-style: bold;
+  letter-spacing: 2px;
+  text-decoration: none;
+}
+
+p {
+  color: white;
+  font-family: Lato;
+  font-style: regular;
+  font-size: 20px;
+  margin-left: 20%;
+  margin-top: 0px;
+  letter-spacing: 2px;
 }
 
 img {
@@ -19,14 +62,14 @@ img {
   margin-top: 29px;
 }
 
-ul {
+nav ul {
   list-style-type: none;
-  display: none;
+  display: none; /*this is fucking this part*/
   margin: 0;
   padding: 0;
 }
 
-ul li a {
+nav ul li a {
   display: block;
   color: white;
   font-family: Lato;
@@ -34,18 +77,100 @@ ul li a {
   padding: 1.5em 3em;
 }
 
+nav {
+  width: 240px;
+  background-color: #2b2d42;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: -240px;
+  z-index: 1000;
+  transition: all ease-in-out 200ms;
+  -webkit-transition: all ease-in-out 200ms;
+}
+
+.aboutMe {
+  margin: 150px auto;
+  width: 50%;
+  padding: 8px;
+}
+
+img {
+  float: left;
+  width: 300px;
+  height: 260px;
+  padding: 0 10px 0 0;
+}
+
+.textAbout {
+  text-align: justify;
+  font-family: lato;
+  font-weight: regular;
+  color: white;
+  font-size: 20px;
+  margin-top: 25px;
+}
+
+.contactInfo ul li {
+  list-style-type: none;
+}
+
+.contactInfo ul li a {
+  display: block;
+  color: white;
+  font-family: Lato;
+  text-decoration: none;
+  font-size: 20px;
+  text-indent: 30em;
+  padding: 20px;
+}
+
+.insta::before {
+  content: "";
+  display: block;
+  background: url("instagram2.svg") no-repeat;
+  width: 30px;
+  height: 30px;
+}
+
+.email::before {
+  content: "";
+  display: block;
+  background: url("gmail-yellow.svg") no-repeat;
+  width: 30px;
+  height: 30px;
+}
+
+.discord::before {
+  content: "";
+  display: block;
+  background: url("discord-yellow.svg") no-repeat;
+  width: 30px;
+  height: 30px;
+}
+
+.steam::before {
+  content: "";
+  display: block;
+  background: url("steam-yellow.svg") no-repeat;
+  width: 30px;
+  height: 30px;
+}
+
 .square {
-  background-color: white;
+  background-color: #1f1e20;
   width: 100%;
   height: 100%;
+  -webkit-box-shadow: -15px -15px 0px 0px #f8f32b;
+  box-shadow: -15px -15px 0px 0px #f8f32b;
 }
 
 .wrapper {
   display: grid;
   grid-template-columns: repeat(3, 15vw);
   grid-auto-rows: minmax(15vw, auto);
-  column-gap: 55px;
-  row-gap: 55px;
+  column-gap: 65px;
+  row-gap: 65px;
   align-items: center;
   justify-items: center;
 }
@@ -55,17 +180,104 @@ ul li a {
   justify-content: center;
 }
 
-.active {
-  position: fixed;
+.hover::after {
+  content: " ";
   display: block;
-  background: #2b2d42;
-  width: 20%;
-  left: 0;
-  top: 0;
-  height: 100%;
+  width: 0;
+  height: 2px;
+  background: white;
+  transition: width 0.3s;
+  border-radius: 5px;
 }
 
-#menu {
-  transition: all ease-in-out 200ms; /* not working */
-  -webkit-transition: all ease-in-out 200ms;
+.hover:hover::after {
+  width: 100%;
+  transition: width 0.3s;
+}
+
+.alignment {
+  margin: 0px auto;
+}
+
+/* #toggleMenu {
+  width: 30px;
+  height: 30px;
+  background-color: #2b2d42;
+  background-image: url(menu.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 1050;
+  cursor: pointer;
+  border: 20px solid #2b2d42;
+  border-radius: 2px;
+  transition: all ease-in-out 200ms;
+  -webkit-transition: all ease-in-out 200ms;   
+}
+
+/* #toggleMenu:hover {
+  opacity: 0.7;
+}  */
+
+.navBar {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: black;
+  width: 100%;
+  height: 70px;
+  z-index: 2000;
+}
+
+.nav {
+  display: flex;
+  justify-content: right;
+  list-style: none;
+  margin-right: 15%;
+}
+
+.logo {
+  flex: 1 1 auto;
+  margin-left: 10%;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 35px;
+}
+
+.nav li a {
+  margin: 15px;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.nav li a:hover {
+  color: aqua;
+}
+
+.about-area,
+.work-area,
+contact-area {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%;
+  height: 500px;
+}
+
+.text-part {
+  width: 65%;
+  height: 80%;
+}
+
+html {
+  scroll-behavior: smooth;
 }

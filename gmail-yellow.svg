@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.6, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 512 384" style="enable-background:new 0 0 512 384;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#28282A;}
+	.st1{fill:#141415;}
+	.st2{fill:#F8F32B;}
+</style>
+<title>gmail-yellow</title>
+<rect x="64" class="st0" width="384" height="384"/>
+<polygon class="st1" points="256,232.4 448,384 448,84.7 "/>
+<path class="st2" d="M464,0h-16L256,151.6L64,0H48C21.5,0,0,21.5,0,48v288c0,26.5,21.5,48,48,48h16V84.7l192,147.7L448,84.6V384h16
+	c26.5,0,48-21.5,48-48V48C512,21.5,490.5,0,464,0z"/>
+</svg>
