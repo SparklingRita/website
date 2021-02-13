@@ -1,5 +1,6 @@
 body {
   min-height: 100vh;
+  margin: 0;
   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#2b2d42+0,000000+100 */
   background: #29282a;
 }
@@ -33,7 +34,7 @@ h1 {
 
 .title {
   text-align: center;
-  margin: 200px auto;
+  padding: 100px 50px 50px 50px;
 }
 
 .title a {
@@ -54,12 +55,6 @@ p {
   margin-left: 20%;
   margin-top: 0px;
   letter-spacing: 2px;
-}
-
-img {
-  width: 45px;
-  margin-left: 29px;
-  margin-top: 29px;
 }
 
 nav ul {
@@ -90,13 +85,13 @@ nav {
 }
 
 .aboutMe {
-  margin: 150px auto;
+  display: flex;
+  margin: 50px auto;
   width: 50%;
   padding: 8px;
 }
 
-img {
-  float: left;
+.aboutMe img {
   width: 300px;
   height: 260px;
   padding: 0 10px 0 0;
@@ -116,7 +111,6 @@ img {
 }
 
 .contactInfo ul li a {
-  display: block;
   color: white;
   font-family: Lato;
   text-decoration: none;
@@ -125,36 +119,27 @@ img {
   padding: 20px;
 }
 
-.insta::before {
-  content: "";
-  display: block;
-  background: url("instagram2.svg") no-repeat;
+.contactItem img {
   width: 30px;
   height: 30px;
+  margin-right: 10px;
 }
 
-.email::before {
-  content: "";
-  display: block;
-  background: url("gmail-yellow.svg") no-repeat;
-  width: 30px;
-  height: 30px;
+.contactItem {
+  font-family: Lato;
+  font-weight: regular;
+  color: white;
+  font-size: 20px;
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
 }
 
-.discord::before {
-  content: "";
-  display: block;
-  background: url("discord-yellow.svg") no-repeat;
-  width: 30px;
-  height: 30px;
-}
-
-.steam::before {
-  content: "";
-  display: block;
-  background: url("steam-yellow.svg") no-repeat;
-  width: 30px;
-  height: 30px;
+.contactInfo ul li a:hover {
+  color: #f8f32b;
+  text-shadow: 0 0 2px #fbf874;
+  text-shadow: 0 0 4px #fbf874;
+  text-shadow: 0 0 8px #fbf874;
 }
 
 .square {
@@ -228,9 +213,9 @@ img {
   align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
-  background-color: black;
+  background-color: #141415;
   width: 100%;
-  height: 70px;
+  height: 60px; /*se eu meter aqui 70 fica tudo centrado, mas quero mais pequeno */
   z-index: 2000;
 }
 
@@ -238,15 +223,19 @@ img {
   display: flex;
   justify-content: right;
   list-style: none;
-  margin-right: 15%;
+  margin-right: 10%;
 }
 
 .logo {
+  /*R aka "logo" */
   flex: 1 1 auto;
   margin-left: 10%;
   text-transform: uppercase;
+  font-family: Lato;
+  color: #f8f32b;
   font-weight: bold;
   font-size: 35px;
+  text-decoration: none;
 }
 
 .nav li a {
@@ -254,15 +243,15 @@ img {
   color: white;
   text-decoration: none;
   text-transform: uppercase;
+  font-family: Lato;
+  font-weight: regular;
 }
 
 .nav li a:hover {
-  color: aqua;
+  color: #f8f32b;
 }
 
-.about-area,
-.work-area,
-contact-area {
+.area {
   position: relative;
   display: flex;
   justify-content: space-around;
@@ -270,12 +259,11 @@ contact-area {
   flex-wrap: wrap;
   flex-direction: row;
   width: 100%;
-  height: 500px;
+  min-height: 100vh;
 }
 
 .text-part {
-  width: 65%;
-  height: 80%;
+  width: 100%;
 }
 
 html {
