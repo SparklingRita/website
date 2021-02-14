@@ -269,3 +269,12 @@ nav {
 html {
   scroll-behavior: smooth;
 }
+
+.collection {
+  text-align: left;
+  font-size: 30px;
+  font-family: Lato;
+  font-weight: regular;
+  color: white;
+  margin-left: 10%;
+}
