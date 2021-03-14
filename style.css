@@ -23,6 +23,10 @@ body {
   z-index: -100;
 }
 
+.hero-embroidery {
+  animation: transitionIn 1.5s;
+}
+
 h1 {
   color: white;
   font-family: Lato;
@@ -148,6 +152,7 @@ nav {
   height: 100%;
   -webkit-box-shadow: -15px -15px 0px 0px #f8f32b;
   box-shadow: -15px -15px 0px 0px #f8f32b;
+  display: block;
 }
 
 .wrapper {
@@ -277,4 +282,191 @@ html {
   font-weight: regular;
   color: white;
   margin-left: 10%;
+}
+
+.container-gallery {
+  width: 100%;
+  box-sizing: border-box;
+  max-width: 120rem;
+  margin: auto;
+  padding: 0 3rem;
+}
+
+.image-gallery {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 1rem;
+  grid-template-areas:
+    "img-1 img-2 img-3 img-3"
+    "img-1 img-4 img-5 img-6";
+}
+
+.image-gallery a {
+  width: 100%;
+  height: 15rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+/* .image-gallery a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba (0, 0, 0, 0.8);
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.image-gallery a:hover::before {
+  opacity: 1;
+} */
+
+.img-1 {
+  grid-area: img-1;
+  background-image: url(bird.jpg);
+  min-height: 31rem; /* colocar isto para imagens na vertical */
+}
+
+.img-2 {
+  grid-area: img-2;
+  background-image: url(bird.jpg);
+}
+
+.img-3 {
+  grid-area: img-3;
+  background-image: url(bird.jpg);
+}
+
+.img-4 {
+  grid-area: img-4;
+  background-image: url(bird.jpg);
+}
+
+.img-5 {
+  grid-area: img-5;
+  background-image: url(bird.jpg);
+}
+
+.img-6 {
+  grid-area: img-6;
+  background-image: url(bird.jpg);
+}
+
+.img-7 {
+  grid-area: img-7;
+  background-image: url(bird.jpg);
+}
+
+.img-8 {
+  grid-area: img-8;
+  background-image: url(bird.jpg);
+}
+
+.vertical-text {
+  color: white;
+  font-size: 30px;
+  text-transform: uppercase;
+  word-wrap: break-word;
+  width: 40px;
+  text-align: center;
+  padding-left: 7rem;
+  padding-top: 3rem;
+}
+
+.vertical-text h2 {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+}
+
+.grid-alignment {
+  display: flex;
+  width: 95%;
+  padding-top: 5rem;
+}
+
+.dropdown {
+  width: 30rem;
+  position: relative;
+}
+
+.dropdown:hover .dropdown-list {
+  opacity: 1;
+  visibility: visible;
+}
+
+.dropdown-select {
+  padding: 1.5rem;
+  border-radius: 4px;
+  background-color: white;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+
+.dropdown-list {
+  border-radius: 4px;
+  background-color: white;
+  position: absolute;
+  top: 110%;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s linear, visibility 0.2s linear;
+}
+
+.dropdown-list-item {
+  padding: 1rem;
+  font-size: 1.4rem;
+}
+
+@keyframes transitionIn {
+  from {
+    opacity: 0;
+    transform: rotateX(-10deg);
+  }
+
+  to {
+    opacity: 1;
+    transform: rotateX(0);
+  }
+}
+
+.hero {
+  animation: transitionIn 1s;
+}
+
+.hero img {
+  animation: movingTriangle 2s;
+}
+
+@keyframes movingTriangle {
+  from {
+    left: -100px;
+  }
+  to {
+    left: 0px;
+  }
+}
+
+footer {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  text-align: center;
+  color: white;
+  padding-bottom: 1rem;
 }
