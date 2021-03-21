@@ -32,8 +32,8 @@ body {
 h1 {
   color: white;
   font-family: Lato;
-  font-size: 50px;
-  font-style: bold;
+  font-size: 55px;
+  font-style: 700;
   margin-left: 20%;
   letter-spacing: 2px;
 }
@@ -48,7 +48,7 @@ h1 {
   color: white;
   font-family: Lato;
   font-size: 40px;
-  font-style: bold;
+  font-weight: 700;
   letter-spacing: 2px;
   text-decoration: none;
 }
@@ -61,6 +61,39 @@ p {
   margin-left: 20%;
   margin-top: 0px;
   letter-spacing: 2px;
+  animation: typingAnimation 6.5s;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 3.5px solid #1f1e20;
+  width: 44ch;
+}
+
+@keyframes typingAnimation {
+  0% {
+    width: 0ch;
+  }
+  100% {
+    width: 44ch; /* a frase tem 44 caracteres */
+  }
+}
+
+.btn {
+  position: relative;
+  padding: 15px 20px;
+  background: #1f1e20;
+  font-size: 15px;
+  display: inline-block;
+  text-decoration: none;
+  color: blue;
+  cursor: pointer;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+
+.btn:hover {
+  letter-spacing: 4px;
 }
 
 nav ul {
@@ -101,12 +134,19 @@ nav {
   width: 450px;
   height: 410px;
   padding: 0 10px 0 0;
+  transition: 0.6s;
+  cursor: pointer;
+  box-shadow: -16px -16px 0px 0px #f8f32b;
+}
+
+.aboutMe img:hover {
+  transform: scale(0.9, 0.9);
 }
 
 .textAbout {
   text-align: justify;
   font-family: "Lato", sans-serif;
-  font-weight: regular;
+  font-weight: 300;
   color: white;
   font-size: 25px;
   margin-top: 25px;
@@ -119,6 +159,36 @@ nav {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
 } */
+
+.align-horizontal .wrapper a.work-titles {
+  text-decoration: none;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: lato;
+  font-weight: regular;
+  color: white;
+}
+
+.align-horizontal .wrapper span {
+  opacity: 0;
+  transition: 0.5s;
+  font-size: 45px;
+}
+
+.align-horizontal .wrapper span:hover {
+  opacity: 1;
+  font-size: 46px;
+}
+
+.align-horizontal .wrapper .square {
+  opacity: 1;
+}
+
+.align-horizontal .wrapper .square:hover {
+  filter: blur(1px);
+}
 
 .contactInfo ul li {
   list-style-type: none;
@@ -180,11 +250,12 @@ nav {
   justify-content: center;
 }
 
+/*animaçao da linha debaixo dos titulos*/
 .hover::after {
   content: " ";
   display: block;
   width: 0;
-  height: 2px;
+  height: 3px;
   background: white;
   transition: width 0.3s;
   border-radius: 5px;
@@ -467,7 +538,7 @@ html {
 
 @keyframes movingTriangle {
   from {
-    left: -100px;
+    left: -1000px;
   }
   to {
     left: 0px;
@@ -514,13 +585,13 @@ footer {
 
 .image-gallery-photography img-1 {
   grid-area: img-1;
-  background-image: url(/photography/DSC_0091-2.jpg);
+  background-image: url(DSC_0091-2.jpg);
   min-height: 31rem; /* colocar isto para imagens na vertical */
 }
 
 .image-gallery-photography img-2 {
   grid-area: img-2;
-  background-image: url(/photography/DSC_0091-2.jpg);
+  background-image: url(DSC_0091-2.jpg);
 }
 
 .image-gallery-photography img-3 {
