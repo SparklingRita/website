@@ -61,20 +61,6 @@ p {
   margin-left: 20%;
   margin-top: 0px;
   letter-spacing: 2px;
-  animation: typingAnimation 6.5s;
-  overflow: hidden;
-  white-space: nowrap;
-  border-right: 3.5px solid #1f1e20;
-  width: 44ch;
-}
-
-@keyframes typingAnimation {
-  0% {
-    width: 0ch;
-  }
-  100% {
-    width: 44ch; /* a frase tem 44 caracteres */
-  }
 }
 
 .btn {
@@ -119,8 +105,6 @@ nav {
   bottom: 0;
   left: -240px;
   z-index: 1000;
-  transition: all ease-in-out 200ms;
-  -webkit-transition: all ease-in-out 200ms;
 }
 
 .aboutMe {
@@ -567,7 +551,7 @@ footer {
   grid-gap: 1rem;
   grid-template-areas:
     "img-1 img-2 img-3 img-3"
-    "img-1 img-4 img-5 img-6";
+    "img-1 img-2 img-5 img-6";
 }
 
 .image-gallery-photography a {
@@ -583,43 +567,44 @@ footer {
   text-decoration: none;
 }
 
-.image-gallery-photography img-1 {
+.image-gallery-photography .img-1 {
   grid-area: img-1;
   background-image: url(DSC_0091-2.jpg);
   min-height: 31rem; /* colocar isto para imagens na vertical */
 }
 
-.image-gallery-photography img-2 {
+.image-gallery-photography .img-2 {
   grid-area: img-2;
-  background-image: url(DSC_0091-2.jpg);
+  background-image: url(DSC_0093-3.jpg);
+  min-height: 31rem;
 }
 
-.image-gallery-photography img-3 {
+.image-gallery-photography .img-3 {
   grid-area: img-3;
-  background-image: url(rita-1.png);
+  background-image: url(DSC_0124-14.jpg);
 }
 
-.image-gallery-photography img-4 {
+.image-gallery-photography .img-4 {
   grid-area: img-4;
   background-image: url(bird.jpg);
 }
 
-.image-gallery-photography img-5 {
+.image-gallery-photography .img-5 {
   grid-area: img-5;
-  background-image: url(bird.jpg);
+  background-image: url(DSC_0140-1.jpg);
 }
 
-.image-gallery-photography img-6 {
+.image-gallery-photography .img-6 {
   grid-area: img-6;
-  background-image: url(bird.jpg);
+  background-image: url(DSC_0151-2.jpg);
 }
 
-.image-gallery-photography img-7 {
+.image-gallery-photography .img-7 {
   grid-area: img-7;
   background-image: url(bird.jpg);
 }
 
-.image-gallery-photography img-8 {
+.image-gallery-photography .img-8 {
   grid-area: img-8;
   background-image: url(bird.jpg);
 }
