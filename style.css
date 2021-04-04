@@ -137,13 +137,6 @@ nav {
   margin-left: 35px;
 }
 
-/* nao esta a fazer nada
-.contactInfo {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto;
-} */
-
 .align-horizontal .wrapper a.work-titles {
   text-decoration: none;
 
@@ -169,47 +162,6 @@ nav {
 .align-horizontal .wrapper .square {
   opacity: 1;
 }
-
-/*.align-horizontal .wrapper .square:hover {
-  filter: blur(1px);
-} */
-
-/*.contactInfo ul li {
-  list-style-type: none;
-}
-
-.contactInfo ul li a {
-  color: white;
-  font-family: Lato;
-  text-decoration: none;
-  font-size: 20px;
-  text-indent: 30em;
-  padding: 20px;
-}
-
-.contactItem img {
-  width: 30px;
-  height: 30px;
-  margin-right: 10px;
-}
-
-.contactItem {
-  font-family: Lato;
-  font-weight: regular;
-  color: white;
-  font-size: 20px;
-  margin: 20px 0;
-  display: flex;
-  align-items: center;
-}
-
-.contactInfo ul li a:hover {
-  color: #f8f32b;
-  text-shadow: 0 0 2px #fbf874;
-  text-shadow: 0 0 4px #fbf874;
-  text-shadow: 0 0 8px #fbf874;
-}
-*/
 
 .social-networks ul {
   position: absolute;
@@ -440,43 +392,43 @@ html {
 
 .img-1 {
   grid-area: img-1;
-  background-image: url(bird.jpg);
+  background-image: url(./img/bird.jpg);
   min-height: 31rem; /* colocar isto para imagens na vertical */
 }
 
 .img-2 {
   grid-area: img-2;
-  background-image: url(bird.jpg);
+  background-image: url(./img/bird.jpg);
 }
 
 .img-3 {
   grid-area: img-3;
-  background-image: url(bird.jpg);
+  background-image: url(./img/bird.jpg);
 }
 
 .img-4 {
   grid-area: img-4;
-  background-image: url(bird.jpg);
+  background-image: url(./img/bird.jpg);
 }
 
 .img-5 {
   grid-area: img-5;
-  background-image: url(bird.jpg);
+  background-image: url(./img/bird.jpg);
 }
 
 .img-6 {
   grid-area: img-6;
-  background-image: url(bird.jpg);
+  background-image: url(./img/bird.jpg);
 }
 
 .img-7 {
   grid-area: img-7;
-  background-image: url(bird.jpg);
+  background-image: url(./img/bird.jpg);
 }
 
 .img-8 {
   grid-area: img-8;
-  background-image: url(bird.jpg);
+  background-image: url(./img/bird.jpg);
 }
 
 .vertical-text {
@@ -609,44 +561,44 @@ footer {
 
 .image-gallery-photography .img-1 {
   grid-area: img-1;
-  background-image: url(DSC_0091-2.jpg);
+  background-image: url(./img/photography/DSC_0091-2.jpg);
   min-height: 31rem; /* colocar isto para imagens na vertical */
 }
 
 .image-gallery-photography .img-2 {
   grid-area: img-2;
-  background-image: url(DSC_0093-3.jpg);
+  background-image: url(./img/photography/DSC_0093-3.jpg);
   min-height: 31rem;
 }
 
 .image-gallery-photography .img-3 {
   grid-area: img-3;
-  background-image: url(DSC_0124-14.jpg);
+  background-image: url(./img/photography/DSC_0124-14.jpg);
 }
 
 .image-gallery-photography .img-4 {
   grid-area: img-4;
-  background-image: url(bird.jpg);
+  background-image: url(./img/bird.jpg);
 }
 
 .image-gallery-photography .img-5 {
   grid-area: img-5;
-  background-image: url(DSC_0140-1.jpg);
+  background-image: url(./img/photography/DSC_0140-1.jpg);
 }
 
 .image-gallery-photography .img-6 {
   grid-area: img-6;
-  background-image: url(DSC_0151-2.jpg);
+  background-image: url(./img/photography/DSC_0151-2.jpg);
 }
 
 .image-gallery-photography .img-7 {
   grid-area: img-7;
-  background-image: url(bird.jpg);
+  background-image: url(./img/bird.jpg);
 }
 
 .image-gallery-photography .img-8 {
   grid-area: img-8;
-  background-image: url(bird.jpg);
+  background-image: url(./img/bird.jpg);
 }
 
 .social {
@@ -697,7 +649,7 @@ footer {
   background: #333;
 }
 .social .button:nth-child(5):hover .icon {
-  background: #ff0000;
+  background: #1b2838;
 }
 .social .button .icon i {
   font-size: 25px;
@@ -719,12 +671,12 @@ footer {
   font-weight: 500;
   line-height: 60px;
   margin-left: 10px;
-  margin-right: 20px;
+  margin-right: 25px;
   transition: all 0.3s ease-out;
 }
 .social .button:nth-child(1) span {
   /*email*/
-  color: #c43145;
+  color: black;
 }
 .social .button:nth-child(2) span {
   /*discord*/
@@ -740,5 +692,5 @@ footer {
 }
 .wrapper .button:nth-child(5) span {
   /*discord*/
-  color: #ff0000;
+  color: #1b2838;
 }
